@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div>
+                <h3 class="h-title">jay kav</h3>
+            </div>
+
+
+        </nav>
+
+        <div class="brand">
+
+            <div class="b-gauche">
+                <div class="img-containeur">
+                    <img class="img-d" src="images/jay-2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="b-droit">
+                <div class="poa">
+                    <h3>Hi Gigs <strong>I'm:</strong></h3>
+                    <h1>Victoire Kavao Hangi </h1>
+                </div>
+                <div description>
+                    <p>Studient at ESIS </p>
+                    <p>I'm Full stack Developper </p>
+                    <button class="btn">Contactez moi </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#Apropos" class="nav--link">A propos</a></li>
+                    <li><a href="Contact" class="nav--link">Metiers</a></li>
+                    <li><a href="#Projets" class="nav--link">Projets</a></li>
+                    <li><a href="Contact" class="nav--link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bouton">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <script>
+            document.querySelector('.fa-xmark').style.display = 'none'
+
+            const bouton = document.querySelector('.bouton')
+            const sidebar = document.querySelector('.sidebar')
+
+            bouton.onclick = function () {
+                if (sidebar.style.right == '-250px') {
+                    sidebar.style.right = '0'
+                    document.querySelector('.fa-xmark').style.display = ''
+                    document.querySelector('.fa-bars').style.display = 'none'
+
+                } else {
+                    sidebar.style.right = '-250px'
+                    document.querySelector('.fa-xmark').style.display = 'none'
+                    document.querySelector('.fa-bars').style.display = ''
+                }
+            }
+        </script>
+
+        <div class="p-bar">
+            <div class="wesh">
+                <img src="images/crack.jpg" alt="">
+                <img src="images/bro.jpg" alt="">
+                <img src="images/mood.jpg" alt="">
+                <img src="images/esis.jpg" alt="">
+            </div>
+
+            <div class="wesh-2">
+
+            </div>
+
+            <div class="wesh-3"></div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="gauche">
+
+            <div class="gauche-left">
+                <div class="yulu">
+                    <h3>I've some competences in:</h3>
+                </div>
+                <div class="chini">
+                    <div class="reso">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h3>network Manager</h3>
+                    </div>
+                    <div class="os">
+                        <i class="fa-brands fa-windows"></i>
+                        <h3>Operating System Manager</h3>
+                    </div>
+                    <div class="os">
+                        <i class="fa-solid fa-apple-whole"></i>
+                        <h3>generaliste in onformatique</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gauche-right">
+
+                <div>
+                    <h1 class="titr">METIERS</h1>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <div>
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <h3>product designer</h3>
+                            <p>voir plus</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <i class="fa-solid fa-desktop"></i>
+                            <h3>product designer</h3>
+                            <p>voir plus</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>
+                            <i class="fa-solid fa-bolt"></i>
+                            <h3>product designer</h3>
+                            <p>voir plus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="baba">
+        <section class="tem" id="tem">
+            <div class="tit">
+                <h3 class="titre">Qu'avons nous réalisés?</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+            </div>
+            <div class="conten">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="./images/Mahuno.jpg">
+                    </div>
+                    <div class="txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod</p>
+                        <h3>Mahuno Bazire</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="./images/bleus.jpg">
+                    </div>
+                    <div class="txt">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod</p>
+                        <h3>l'équipe de France</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pili">
+            <section class="contact" id="contact">
+                <div class="tnoir">
+                    <h2 class="ttext"> <span>C</span>ontact </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem</p>
+                </div>
+                <div class="form">
+                    <h3>envoyer nous un message</h3>
+                    <div class="input">
+                        <input type="text" placeholder="Nom">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="message">
+                    </div>
+                    <div class="input">
+                        <input type="submit" value="envoyer">
+                    </div>
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
+
+<footer>
+    <div class="copy">
+        <p>Administreted by <a href="#">jay kav </a>2022 </p>
+    </div>
+</footer>
+</body>
+
+</html>
